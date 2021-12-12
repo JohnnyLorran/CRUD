@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".view.SplashActivity">
+
+  <TextView
+      android:id="@+id/txtNomeApp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="120dp"
+      android:textStyle="bold"
+      android:textColor="@color/orange"
+      android:text="Exemplo CRUD"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/txtNome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+      android:textStyle="bold"
+      android:textColor="@color/orange"
+      android:text="Com banco de Dados SQLite"
+      android:textSize="20sp" />
+
+  <TextView
+      android:id="@+id/txtNo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+      android:textStyle="bold"
+      android:textColor="@color/orange"
+      android:text="SQLite"
+      android:textSize="20sp" />
+
+  <ImageView
+      android:id="@+id/imgLogo"
+      android:layout_gravity="center"
+      android:layout_marginTop="10dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/crud" />
+
+  <TextView
+      android:id="@+id/txtVersaoAPP"
+      android:layout_gravity="center"
+      android:layout_marginTop="160dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textStyle="bold"
+      android:textColor="@color/orange"
+      android:text="Versão 1.0"
+      android:textSize="20sp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

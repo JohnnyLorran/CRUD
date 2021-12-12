@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".view.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:text="Bem vindo ao exemplo do" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/crud" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnICC"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="50dp"
+                android:background="@drawable/borda_botao"
+                android:onClick="onClick"
+                android:text=" Incluir Cliente "
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnICP"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:text="Incluir Produto" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnATC"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:layout_marginRight="44dp"
+                android:onClick="onClick"
+                android:text="Alterar Cliente" />
+
+            <Button
+                android:id="@+id/btnATP"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:text="Alterar Produto" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnEXC"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:layout_marginRight="44dp"
+                android:text="Excluir Cliente" />
+
+            <Button
+                android:id="@+id/btnEXP"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:text="Excluir Produto" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnLIC"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:layout_marginRight="44dp"
+                android:text="Listar Clientes" />
+
+            <Button
+                android:id="@+id/btnLIP"
+                android:textColor="@color/black"
+                android:background="@drawable/borda_botao"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:onClick="onClick"
+                android:text="Listar Produtos" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Feito por" />
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/orange"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Johnny Lorran Santoro Rodrigues da Rocha" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
