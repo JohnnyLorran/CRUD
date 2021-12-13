@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnICC, btnICP; // Botões de inclusão
     Button btnATC, btnATP; // Botões de alteração
-    Button btnEXC, btnEXP; // Botões de exclusão
     Button btnLIC, btnLIP; // Botões de listagem
 
     @Override
@@ -41,9 +40,6 @@ public class MainActivity extends AppCompatActivity {
 
         btnATC = findViewById(R.id.btnATC);
         btnATP = findViewById(R.id.btnATP);
-
-        btnEXC = findViewById(R.id.btnEXC);
-        btnEXP = findViewById(R.id.btnEXP);
 
         btnLIC = findViewById(R.id.btnLIC);
         btnLIP = findViewById(R.id.btnLIP);
@@ -66,15 +62,11 @@ public class MainActivity extends AppCompatActivity {
                bundle.putByte("cpA", (byte) 0);
                irPara = AlterarActivity.class;
                break;
-           // Botão para Excluir cliente
-           case R.id.btnEXC:
-               bundle.putByte("cpE", (byte) 0);
-               irPara = ExcluirActivity.class;
-               break;
            // Botão para listar clientes
            case R.id.btnLIC:
                bundle.putByte("cpL", (byte) 0);
                irPara = ListarActivity.class;
+               Toast.makeText(this, "Para excluir um cliente, arraste para a esquerda !", Toast.LENGTH_LONG).show();
                break;
                
            //Clicks em relação ao PRODUTO    
@@ -89,15 +81,11 @@ public class MainActivity extends AppCompatActivity {
                bundle.putByte("cpA", (byte) 1);
                irPara = AlterarActivity.class;
                break;
-           // Botão para Excluir produto
-           case R.id.btnEXP:
-               bundle.putByte("cpE", (byte) 1);
-               irPara = ExcluirActivity.class;
-               break;
            // Botão para Listar produtos
            case R.id.btnLIP:
                bundle.putByte("cpL", (byte) 1);
                irPara = ListarActivity.class;
+               Toast.makeText(this, "Para excluir um produto, arraste para a esquerda !", Toast.LENGTH_LONG).show();
                break;
            default:
                break;

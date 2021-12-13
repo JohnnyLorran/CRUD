@@ -48,10 +48,7 @@ public class ProdutoController extends AppDataBase implements ICrud<Produto>{
 
     @Override
     public List<Produto> listar(){
-
-        List<Produto> lista = new ArrayList<>();
-
-        return lista;
+        return getAllProdutos(ProdutoDataModel.TABELA);
 
     }
 }
